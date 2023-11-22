@@ -56,8 +56,8 @@ class Ball {
 }
 
 const balls = [];
-
-while (balls.length < 4) {
+// 3º POSIBLE ERROR, aumentar el número de bolas
+while (balls.length < 25) {
     const size = random(10, 20);
     const ball = new Ball(
         random(0 + size, width - size),
