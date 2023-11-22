@@ -1,3 +1,5 @@
+import {ctx, width, height} from './canvas_setup.js';
+import {Ball, random, randomRGB, balls} from './ballclass.js';
 
 // 3º POSIBLE ERROR, aumentar el número de bolas
 while (balls.length < 25) {

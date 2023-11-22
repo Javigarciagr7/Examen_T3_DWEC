@@ -1,3 +1,6 @@
+import {ctx, width, height} from './canvas_setup.js';
+export{Ball, random, randomRGB, balls};
+
 // 2º ERROR, en el contructor de la clase ball falta el parametro color y sustituir el randomRGB() por color en el this.color = 
 class Ball {
     constructor(x, y, velX, velY, color, size) {
