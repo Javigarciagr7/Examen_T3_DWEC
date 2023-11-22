@@ -24,10 +24,12 @@ class Ball {
         this.size = size;
     }
 
+
+// 5ª ERROR, modificar el Math.PI() y quitarle los parentesis
     draw() {
         ctx.beginPath();
         ctx.fillStyle = this.color;
-        ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI());
+        ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
         ctx.fill();
     }
 
@@ -65,6 +67,7 @@ while (balls.length < 25) {
         random(0 + size, height - size),
         random(-7, 7),
         random(-7, 7),
+        randomRGB,
         size
     );
 
@@ -80,7 +83,7 @@ function loop() {
         ball.draw();
         ball.update();
         for (const otherBall of balls) {
-            if (ball !== otherBall) {
+            if (ball == otherBall) {
                 ball.collisionDetect(otherBall);
             }
         }
