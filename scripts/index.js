@@ -13,13 +13,14 @@ function randomRGB() {
     return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 
+// 2º ERROR, en el contructor de la clase ball falta el parametro color y sustituir el randomRGB() por color en el this.color = 
 class Ball {
-    constructor(x, y, velX, velY, size) {
+    constructor(x, y, velX, velY, color, size) {
         this.x = x;
         this.y = y;
         this.velX = velX;
         this.velY = velY;
-        this.color = randomRGB();
+        this.color = color;
         this.size = size;
     }
 
