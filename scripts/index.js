@@ -56,6 +56,7 @@ class Ball {
 }
 
 const balls = [];
+
 // 3º POSIBLE ERROR, aumentar el número de bolas
 while (balls.length < 25) {
     const size = random(10, 20);
@@ -70,8 +71,9 @@ while (balls.length < 25) {
     balls.push(ball);
 }
 
+//4º ERROR, En la función loop, modificar los valores rgba para modificar el color verde que venía por defecto
 function loop() {
-    ctx.fillStyle = 'rgba(0, 245, 0, 0.25)';
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.95)';
     ctx.fillRect(0, 0, width, height);
 
     for (const ball of balls) {
