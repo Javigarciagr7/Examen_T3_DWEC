@@ -1,4 +1,4 @@
-export{ctx, width, height};
+export{ctx, width, height}; 
 
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
